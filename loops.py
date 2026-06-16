@@ -1,0 +1,59 @@
+#
+# Estruturas de repetição
+# #
+
+abcdario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', '...']
+inic = 0
+fim = 0
+passo = 0
+rang = []
+
+# 
+# Laço FOR
+# ========================================================================================#
+
+# O laço for em python serve única e exclusivamente para iterar sobre uma coleção de dados.
+# Utiliza a palavra in para fazer a passagem dos valores.
+# #
+print ("As primeiras letras do alfabeto são: ")
+for abc in abcdario:
+    print (abc, end= ", ")
+
+
+# A função range() do python serve para criar uma sequência númerica (lista) iteravel.
+# Ela possui os seguintes parâmetros: range(início?, fim, passo?)
+# início -> é o ponto de partida da sequência (opcional)
+# Fim -> o limimite (o qual a sequência nunca alcança)
+# passo -> Razão da sequência (opcional)
+# # 
+print ("\n\nCrie sua sequência!")
+
+inic = int(input("Digite o número inícial da sequência: "))
+fim = int(input("Digite o número limite da sequência: "))
+passo = int(input("Digite o passo da sequência: "))
+
+rang = range(inic, fim, passo)
+
+for i in rang:
+    print (i, end=", ")
+
+# continue e break
+countComp = 0
+countPri = 0
+
+for i in range(100):
+    for a in range(i):
+        if a == 0:
+            a = 1
+        
+        if i%a != i & i%a != 1:
+            i=0
+            countComp += 1
+            break
+    if i == 0:
+        continue
+    else:
+        countPri += 1
+
+print ("\nDe 0 à 100 existem", countComp, "números compostos e", countPri, "números primos!")
+  
