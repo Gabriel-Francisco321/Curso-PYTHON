@@ -1,8 +1,9 @@
-#
-# O comando #
-
 # Múltiplas atribuições em uma linha: a receberá 5 e b receberá 3 
 a, b = 5, 3
+
+#
+# Operadores Aritméticos
+# ============================================================== #
 
 # Adição
 print (a + b)

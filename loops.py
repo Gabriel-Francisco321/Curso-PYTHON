@@ -1,6 +1,6 @@
 #
 # Estruturas de repetição
-# #
+# ============================================================== #
 
 abcdario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', '...']
 inic = 0
@@ -22,9 +22,9 @@ for abc in abcdario:
 
 # A função range() do python serve para criar uma sequência númerica (lista) iteravel.
 # Ela possui os seguintes parâmetros: range(início?, fim, passo?)
-# início -> é o ponto de partida da sequência (opcional)
-# Fim -> o limimite (o qual a sequência nunca alcança)
-# passo -> Razão da sequência (opcional)
+#   início -> é o ponto de partida da sequência (opcional), caso no seja informado, o padrão será 0
+#   Fim -> o limimite (o qual a sequência nunca alcança)
+#   passo -> Razão da sequência (opcional), caso no seja informado, o padrão será 1
 # # 
 print ("\n\nCrie sua sequência!")
 
@@ -38,6 +38,9 @@ for i in rang:
     print (i, end=", ")
 
 # continue e break
+# As palavras reservadas continue e break são utilizadas para controlar o fluxo de execução de um laço.
+# A palavra continue faz com que o laço ignore a iteração atual e passe para a próxima iteração.
+# A palavra break faz com que o laço seja interrompido, e a execução do programa continue a partir da linha seguinte ao laço.
 countComp = 0
 countPri = 0
 

@@ -1,4 +1,8 @@
 #
+# Condições em Python
+# ============================================================== #
+
+#
 # Condição IF () 
 # 
 # #
@@ -6,7 +10,7 @@
 # Espera receber um número digitado pelo usuário. A função int converte a entrada em um número inteiro.
 numero = int(input("Digite um número: "))
 
-# A intrução são aninhadas atravez da indentação. Intruções internas precisam de um recuo maior.  
+# As instruções são aninhadas através da indentação. Instruções internas precisam de um recuo maior.  
 if (numero > 0):
     print ("O número é positivo!")
 elif (numero == 0): # A instrução elif funciona como uma abreviatura do else if tradicional
@@ -18,7 +22,8 @@ else:
 
 #
 # "Condição" match
-# Funciona como o switch para a maioria das linguagens de programação# 
+# Funciona como o switch da maioria das linguagens de programação
+# # 
 opcao = int(input("Digite um número: "))
 
 match opcao:
@@ -26,6 +31,6 @@ match opcao:
         print("O número digitado é o 10!")
     case 20:
         print("O número digitado é o 20!")
-    case _:
+    case _: # O _ funciona como o default do switch tradicional
         print("O número digitado é diferente de 10 e de 20")
 
