@@ -10,7 +10,7 @@ rang = []
 
 # 
 # Laço FOR
-# ========================================================================================#
+# ==============================================================#
 
 # O laço for em python serve única e exclusivamente para iterar sobre uma coleção de dados.
 # Utiliza a palavra in para fazer a passagem dos valores.
@@ -59,4 +59,22 @@ for i in range(100):
         countPri += 1
 
 print ("\nDe 0 à 100 existem", countComp, "números compostos e", countPri, "números primos!")
-  
+
+# 
+# Laço WHILE
+# ==============================================================#
+# O laço while em python executa um bloco de código enquanto uma condição for verdadeira.
+
+count = 0
+while count < 10:
+    print (count, end=", ")
+    count += 1
+
+# 
+# função pass
+# A função pass não faz nada, mas é utilizada quando é necessário 
+#   sintaticamente ter um bloco de código, mas não deseja executar nenhum comando.
+# #
+
+# while True:
+#     pass

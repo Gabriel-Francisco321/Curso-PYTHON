@@ -52,3 +52,6 @@ mesma_lista [-2:] = []
 # O penultimo e o último elementos da lista foram removidos, e como a mesma_lista é 
 #   uma referência para a lista original, a lista original também foi alterada.
 print (lista)
+
+# A palavra reservada in é utilizada para verificar se um elemento está contido dentro de uma lista.
+print("a" in lista)
