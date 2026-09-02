@@ -1,5 +1,6 @@
 # Múltiplas atribuições em uma linha: a receberá 5 e b receberá 3 
 a, b = 5, 3
+c = 1
 
 #
 # Operadores Aritméticos
@@ -45,7 +46,25 @@ print (a == b) # False
 # Diferente (!=)
 print (a != b) # True
 
+# Condição dupla
+print (a != b > c) # True
+
 print ("\n")
+
+#
+# Operadores Booleanos 
+# ============================================================== #
+
+# E (and)
+print(a > b and c != b) # True
+
+# Ou (or)
+print(a > b or c > a) # True
+
+# Não (not)
+print(not a > b) # False
+
+print("\n")
 
 #
 # Print
