@@ -7,7 +7,8 @@
 # #
 
 def fib (n):
-    """Função que exibe os números da sequência de fibonacci até o valor digitado"""
+
+    # Função que exibe os números da sequência de fibonacci até o valor digitado
     a, b = 0, 1
     while a < n:
         print(a, end=", ")
@@ -20,8 +21,14 @@ fib(n)
 # f = fib
 # f(n) # Teria o mesmo resultado que na linha anterior 
 
+
+#
+# Passagem de Argumentos
+# =====================================================================
+# #
+
 # Argumentos opcionais
-# ================================================================
+# -----------------------------------------------------
 def calc (n1, n2, op='+'): # O parametro op é opcional, caso não seja informado, o padrão será '+'
     match op:
         case '+':
@@ -52,7 +59,7 @@ print(f(2)) #resultará em [1, 2]
 print(f(3)) #resultará em [1, 2, 3]
 
 # Tipos de Argumentos
-# ================================================================
+# ---------------------------------------------------
 #existe 4 tipos de argumentos em python:
 #   - Obrigatórios: são os argumentos que devem ser passados para a função, caso contrário, 
 #   ocorrerá um erro
@@ -70,3 +77,40 @@ def exemplo_combinado(somente_pos, /, padrão, *, somente_nom):
 # para utilizar argumentos posicionais, basta colocar uma barra (/) no final da lista de parâmetros da função, indicando que todos os parâmetros antes da barra são posicionais.
 
 # para utilizar argumentos nomeados, basta colocar um asterisco (*) no início da lista de parâmetros da função, indicando que todos os parâmetros depois do asterisco são nomeados.
+
+
+# Podemos também passar uma lista de argumentos de tamanho variável usando o operador * antes do nome do parâmetro, que será convertido em uma tupla dentro da função.
+def exemplo_varios(*args):
+    for arg in args:
+        print(arg, end=", ")
+
+
+#
+# Funções anônimas
+# =====================================================================
+# #
+
+# A palavra reservada lambda cria uma função anônima em python
+a = lambda x: x**2 # A função lambda recebe um argumento x e retorna o valor de x ao quadrado
+print(a(5)) # resultará em 25
+
+
+#
+# Documentação 
+# =====================================================================
+# #
+
+# É possivel documentar uma função em python usando docstrings, 
+#   que são strings de documentação que ficam logo abaixo da definição da função.
+def maior (x, y):
+    """Retorna o maior valor entre x e y"""
+    if x > y:
+        return x
+    else:
+        return y
+
+print(maior(10, 5)) # resultará em 10
+
+# Esta documentação pode ser acessada usando a função help() ou o atributo __doc__ da função.
+print(help(maior))
+print(maior.__doc__)

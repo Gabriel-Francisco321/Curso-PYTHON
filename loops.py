@@ -78,3 +78,24 @@ while count < 10:
 
 # while True:
 #     pass
+
+
+#
+# Clausula else em laços
+# ==============================================================#
+# A cláusula else pode ser utilizada em laços for e while.
+# O bloco de código dentro da cláusula else será executado quando a condição do 
+#   laço não for mais verdadeira. Esse bloco de código não será executado caso o 
+#   laço seja interrompido por um break.
+# #
+
+for i in range(5):
+    print(i, end=", ")
+else:
+    print("Fim do laço!")
+
+while count < 5:
+    print(count, end=", ")
+    count += 1
+else:
+    print("Fim do laço!")
